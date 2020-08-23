@@ -9,7 +9,7 @@
 // Go to the Project Settings (nut icon).
 char auth[] = "6b700384b4d94c158a2fa0c5ebd6a82d";
 
-// Your WiFi credentials.
+// WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = "Redmi";
 char pass[] = "becca123";
@@ -37,6 +37,7 @@ void loop() {
   Blynk.run();
 
 }
+
 // Handling Joystick data
 BLYNK_WRITE(V1) {
   int x = param[0].asInt();
@@ -74,19 +75,19 @@ BLYNK_WRITE(V1) {
   }
 }
 
-//BLYNK_WRITE(V2) {
-//  if(param.asInt() == 1){
-//    digitalWrite(m11, HIGH);
-//    digitalWrite(m12, LOW);
-//
-//    digitalWrite(m21, LOW);
-//    digitalWrite(m22, HIGH);
-//  } 
-//  else{
-//    digitalWrite(m11, LOW);
-//    digitalWrite(m12, LOW);
-//
-//    digitalWrite(m21, LOW);
-//    digitalWrite(m22  , LOW);
-//  }
-//}
+/*BLYNK_WRITE(V2) {
+  if(param.asInt() == 1){
+    digitalWrite(m11, HIGH);
+    digitalWrite(m12, LOW);
+
+    digitalWrite(m21, LOW);
+    digitalWrite(m22, HIGH);
+  }
+  else{
+    digitalWrite(m11, LOW);
+    digitalWrite(m12, LOW);
+
+    digitalWrite(m21, LOW);
+    digitalWrite(m22  , LOW);
+  }
+}*/
